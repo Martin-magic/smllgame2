@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>飞机大战</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>飞机大战</h1>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div class="controls">
+      <div class="move-buttons">
+        <button id="leftBtn">←</button>
+        <button id="rightBtn">→</button>
+      </div>
+      <button id="startBtn">开始游戏</button>
+      <button id="shootBtn">射击</button>
+    </div>
+    
+    <div class="hud">
+      <div>分数: <span id="score">0</span></div>
+      <div>生命: <span id="lives">3</span></div>
+      <div>关卡: <span id="level">1</span></div>
+    </div>
+    
+    <div class="buttons">
+      <button id="restartBtn" style="display:none">重新开始</button>
+      <button id="historyBtn">历史记录</button>
+    </div>
+    
+    <div id="historyPanel" style="display:none">
+      <h2>历史记录</h2>
+      <div>最高分: <span id="highScore">0</span></div>
+      <div>最高关卡: <span id="maxLevel">0</span></div>
+      <h3>排行榜</h3>
+      <ol id="topScores"></ol>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
